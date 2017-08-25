@@ -83,6 +83,8 @@ const validate = (data) => {
   const validation = new Validator(data, rules, messages)
   validation.passes()
 
+  console.log('>> validation: ', validation)
+
   return validation.errors.all()
 }
 export default reduxForm({
