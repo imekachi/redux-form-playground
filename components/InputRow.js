@@ -1,7 +1,7 @@
 import React from 'react'
 import FormRow from './FormRow'
 
-const InputRow = (props) => {
+const  InputRow = (props) => {
   const { label, input, meta, ...passingProps } = props
   const hasError = meta.error && meta.touched
   return (
